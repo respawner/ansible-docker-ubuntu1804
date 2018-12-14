@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Install requirements
 RUN apt-get update && \
-    apt-get install -y software-properties-common systemd && \
+    apt-get install -y software-properties-common sudo systemd && \
     apt-get clean
 
 # Install Ansible
